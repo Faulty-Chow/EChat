@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EChat</string>
+    <string name="login_button_text">登    录</string>
+    <string name="register_button_text">注    册</string>
+    <string name="login_textview_text">已有帐号？</string>
+    <string name="register_textview_text">没有帐号？</string>
+</resources>

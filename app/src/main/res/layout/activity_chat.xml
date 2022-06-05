@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/backToChatList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/normal_background"
+            android:clickable="true"
+            android:drawableLeft="@drawable/icon_back"
+            android:gravity="start|center_vertical"
+            android:text="聊天列表" />
+
+        <LinearLayout
+            android:id="@+id/chatInfo_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chatName_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Chat Name"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/chatId_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Chat ID"
+                android:textSize="14sp"
+                android:maxLines="1"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/chatInfoEdit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/normal_background"
+            android:clickable="true"
+            android:drawableRight="@drawable/icon_chat_info"
+            android:gravity="center_vertical|end"
+            android:text="详细信息 " />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/message_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:transcriptMode="alwaysScroll"
+        android:divider="#0000" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/input_EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:maxHeight="300dp"
+            android:minHeight="30dp" />
+
+        <TextView
+            android:id="@+id/send_TextView"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/send_button"
+            android:clickable="true"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
